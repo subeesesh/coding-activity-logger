@@ -36,7 +36,7 @@ if choice == "1":
         problem = sub["title"]
 
         # 🔴 Skip duplicates
-        if is_duplicate(sheet, "LeetCode", problem):
+        if is_duplicate(sheet, "LeetCode", problem, today):
             continue
 
         topic = classify_topic(problem)
@@ -80,7 +80,7 @@ elif choice == "2":
 
         topic = classify_topic(problem)
 
-        if is_duplicate(sheet, platform, problem):
+        if is_duplicate(sheet, platform, problem, date):
             print("⚠️ Already logged, skipping\n")
             continue
 
