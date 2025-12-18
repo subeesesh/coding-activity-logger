@@ -14,7 +14,7 @@ date = datetime.now().strftime("%d-%m-%Y")
 time = datetime.now().strftime("%H:%M")
 
 if choice == "1":
-    USERNAME = "subee_02"
+    USERNAME = "YOUR USERNAME"
 
     submissions = get_recent_leetcode(USERNAME, limit=30)
 
